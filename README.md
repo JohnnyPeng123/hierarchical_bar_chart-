@@ -21,13 +21,13 @@ It was downloaded from "https://www.kaggle.com/arashnic/hr-analytics-job-change-
 
 2. hbar.js - JavaScript that used to generate the hbar, slightly modified from the original ones by Mike Bostock
 
-3. hbar.r - r function that produce hbar chart in R environment leveraging "r2d3" package and the original D3.js by Mike Bostock
+3. hbar.r - R function named "hbar" that produce hbar chart in R environment leveraging "r2d3" package and the original D3.js by Mike Bostock
 
 4. main.r - a simple use case to demonstration how to use the hbar.r function to generate hbar chart.
 
 # Function Arguments
 
-This function has 3 main arguments that is required to run this function:
+"hbar" function has 3 main arguments that is required to run it:
 
 1. data - A data.table object in the R environment that contains the data that will be used to generate hbar chart.
 
