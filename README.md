@@ -26,7 +26,7 @@ https://github.com/JohnnyPeng123/hierarchical_bar_chart-/blob/master/demo.r
 
 3. method - method will be used to perform aggregation, you can either use "count" or "sum", "mean" is also available, but the output will not make sense at this stage, planning to show the average/median value as a dot/line on top of the bars in the future.
 
-And 3 optional arguments with default value:
+And 5 optional arguments with default value:
 
 1. left_margin (default = 200) - the amount of white space on the left reservered for displaying the texts
 
