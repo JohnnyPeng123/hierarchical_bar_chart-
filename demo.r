@@ -12,6 +12,8 @@ data$target <- ifelse(data$target==1,"Looking for a job","Not looking for a job"
 groupings <- c("target","last_new_job","relevent_experience","education_level")
 
 # Generate and view the hierarchical bar chart
-chart <- hbar(data,groupings,method="count",num_variable=NULL,na.rm=T)
+chart <- hbar(data,groupings,method="count",left_margin=200,font_size=15,ticks_width=100, num_variable=NULL,na.rm=T)
 chart
+
+
 

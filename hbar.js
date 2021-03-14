@@ -39,8 +39,10 @@ function up(svg, d) {
   x.domain([0, d3.max(d.parent.children, d => d.value)]);
 
   // Update the x-axis.
-  svg.selectAll(".x-axis").transition(transition1)
-      .call(xAxis);
+  svg.selectAll(".x-axis").transition(transition1);
+
+  // Update font-size
+  svg.selectAll("text").style("font-size", 20);
 
   // Transition exiting bars to the new x-scale.
   exit.selectAll("g").transition(transition1)
@@ -129,6 +131,9 @@ function down(svg, d) {
   svg.selectAll(".x-axis").transition(transition2)
       .call(xAxis);
 
+  // Update font-size
+  svg.selectAll("text").style("font-size", 20);
+
   // Transition entering bars to the new x-scale.
   enter.selectAll("g").transition(transition2)
       .attr("transform", (d, i) => `translate(0,${barStep * i})`);
@@ -191,7 +196,8 @@ xAxis = g => g
     .attr("class", "x-axis")
     .attr("transform", `translate(0,${margin.top})`)
     .call(d3.axisTop(x).ticks(width / 80, "s"))
-    .call(g => (g.selection ? g.selection() : g).select(".domain").remove());
+    .call(g => (g.selection ? g.selection() : g).select(".domain").remove())
+    .selectAll("text").style("font-size", 20);
 
 barStep = 27;
           

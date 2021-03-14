@@ -1,4 +1,4 @@
-hbar <- function(data,groupings,method,num_variable=NULL,na.rm=T){
+hbar <- function(data,groupings,method,left_margin = 200,font_size = 15, ticks_width = 100, num_variable=NULL,na.rm=T){
   
   if (method == "count") {
     data_agg <- data %>% group_by(.dots = groupings) %>% summarise(count = n()) %>% data.table() 
@@ -51,5 +51,10 @@ hbar <- function(data,groupings,method,num_variable=NULL,na.rm=T){
   }
   
   output <- list.clean(output, fun = is.null, recursive=T)
-  return(suppressWarnings(r2d3(data=output, script = readLines("https://raw.githubusercontent.com/JohnnyPeng123/hierarchical_bar_chart-/master/hbar.js"))))
+  return(suppressWarnings(r2d3(data=output, script =gsub("/ 80", paste0("/ ",as.character(ticks_width)),
+                                                    gsub(", 20", paste0(", ",as.character(font_size)),
+                                                    gsub("left: 100", paste0("left: ",as.character(left_margin)),
+                                                          readLines("C:/Users/woshi/Desktop/hbarchart/hierarchical_bar_chart-/hbar.js")
+                                                    )))
+                               )))
 }
