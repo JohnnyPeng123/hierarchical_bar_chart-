@@ -4,13 +4,9 @@ Original visualization by @mbostockBy Mike Bostock from:
 
 https://observablehq.com/@d3/hierarchical-bar-chart
 
-To be able to generate the same visualization in R, following are the 3 steps I took:
+I was amazed by this visualization, and I would like to create the same vis in R. (R is the primary language that I use for work)
 
-1. Modified the original D3.js script so it can be read by "r2d3" package (which reads in D3.js and run it in R environment).
-
-2. Added the data manipulation steps to convert R object with data.table format into JSON format represented by list, so it can used by the D3.js script read by "r2d3" package.
-
-3. Wrapped the whole process into a function named "hbar".
+so I have created this "hbar" function to replicate this visualization in R environment.
 
 # How to Use the "hbar" function
 
