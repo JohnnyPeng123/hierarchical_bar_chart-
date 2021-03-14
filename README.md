@@ -37,6 +37,6 @@ The things that I did was:
 
 And 2 optional arguments with default value:
 
-1. num_variable (optional with default = NULL) - if method does not equal to "count", you can use this to specify a numeric variable that should be used for aggregation.
+1. num_variable (default = NULL) - if method does not equal to "count", you can use this to specify a numeric variable that should be used for aggregation.
 
-2. na.rm (optional with default = T) - whether or not to remove observations with missing values during aggregation.
+2. na.rm (default = T) - whether or not to remove observations with missing values during aggregation.
