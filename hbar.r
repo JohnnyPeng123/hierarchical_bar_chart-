@@ -51,10 +51,11 @@ hbar <- function(data,groupings,method,left_margin = 200,font_size = 15, ticks_w
   }
   
   output <- list.clean(output, fun = is.null, recursive=T)
-  return(suppressWarnings(r2d3(data=output, script =gsub("/ 80", paste0("/ ",as.character(ticks_width)),
+  return(suppressWarnings(r2d3(data=output, script =gsub("10px", paste0(as.character(font_size),"px"),
+                                                    gsub("/ 80", paste0("/ ",as.character(ticks_width)),
                                                     gsub(", 20", paste0(", ",as.character(font_size)),
                                                     gsub("left: 100", paste0("left: ",as.character(left_margin)),
                                                           readLines("https://raw.githubusercontent.com/JohnnyPeng123/hierarchical_bar_chart-/master/hbar.js")
-                                                    )))
+                                                    ))))
                                )))
 }
