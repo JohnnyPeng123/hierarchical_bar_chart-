@@ -18,9 +18,9 @@ https://github.com/JohnnyPeng123/hierarchical_bar_chart-/blob/master/demo.r
 
 1. data - A data.table object in the R environment that contains the data that will be used to generate hbar chart.
 
-2. groupings - A vector of strings that contains the categorical variables that will form a hierarchical relationship, from left to right, representing the Highest and the lowest level in this hierarchical relationship.
+2. groupings - A vector of strings that contains the names of the categorical variables that will form a hierarchical relationship, from left to right, representing the highest to the lowest level in this hierarchical relationship.
 
-3. method - method will be used to perform aggregation, you can either use "count" or "sum", "mean" is also available, but the output will not make sense at this stage, planning to show the average/median value as a dot/line on top of the bars in the future.
+3. method - method will be used to perform aggregation, you can either use "count" or "sum", although "mean" is also available, but the output will not make sense at this stage, I am planning to show the average/median value as a dot/line on top of the bars in the future.
 
 And 5 optional arguments with default value:
 
