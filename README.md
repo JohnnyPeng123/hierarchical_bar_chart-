@@ -4,7 +4,7 @@ Original visualization by @mbostockBy Mike Bostock from:
 
 https://observablehq.com/@d3/hierarchical-bar-chart
 
-To be able to generate the same visualization in R, the 3 main things that I did was:
+To be able to generate the same visualization in R, following are the 3 steps I took:
 
 1. Modified the original D3.js script so it can be read by "r2d3" package (which reads in D3.js and run it in R environment).
 
