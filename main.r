@@ -2,11 +2,9 @@ library(r2d3)
 library(data.table)
 library(dplyr)
 library(rlist)
+source("https://raw.githubusercontent.com/JohnnyPeng123/hierarchical_bar_chart-/master/hbar.r")
 
-setwd("C:\\Users\\woshi\\Desktop\\hbarchart")
-
-data_test <- read.csv("aug_train.csv")
-data <- setDT(data_test)
+data <- setDT(read.csv("C:\\Users\\woshi\\Desktop\\hbarchart\\aug_train.csv"))
 data$target <- ifelse(data$target==1,"Looking for a job","Not looking for a job")
 
 # Group data by specified groupings
