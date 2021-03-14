@@ -4,6 +4,8 @@ Original visualization by @mbostockBy Mike Bostock from:
 
 https://observablehq.com/@d3/hierarchical-bar-chart
 
+![Alt Text](https://github.com/JohnnyPeng123/hierarchical_bar_chart-/blob/master/demo.gif)
+
 I was amazed by this visualization, and I would like to create the same vis in R. (R is the primary language that I use for work)
 
 so I have created this "hbar" function to replicate this visualization in R environment.
