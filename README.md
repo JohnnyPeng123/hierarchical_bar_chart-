@@ -16,8 +16,8 @@ The things that I did was:
 
 0. README.md documentation 
 
-1.aug_train.csv - Sample files that I used to develop this function.
-It was downloaded from "https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists"
+1. aug_train.csv - A sample data file that I used to develop this function. 
+   It was downloaded from "https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists"
 
 2. hbar.js - JavaScript that used to generate the hbar, slightly modified from the original ones by Mike Bostock
 
