@@ -14,11 +14,16 @@ The things that I did was:
 
 # Files in this Repo
 
-1.aug_train.csv - was downloaded from:
+0. README.md documentation 
 
-https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists
+1.aug_train.csv - Sample files that I used to develop this function.
+It was downloaded from "https://www.kaggle.com/arashnic/hr-analytics-job-change-of-data-scientists"
 
-It's just a sample files that I used to develop this function.
+2. hbar.js - JavaScript that used to generate the hbar, slightly modified from the original ones by Mike Bostock
+
+3. hbar.r - r function that produce hbar chart in R environment leveraging "r2d3" package and the original D3.js by Mike Bostock
+
+4. main.r - a simple use case to demonstration how to use the hbar.r function to generate hbar chart.
 
 # Function Arguments
 
