@@ -16,7 +16,7 @@ To be able to generate the same visualization in R, the 3 main things that I did
 
 A quick demo on how to use this "hbar" function to generate hierarchical bar chart in R:
 
-https://github.com/JohnnyPeng123/hierarchical_bar_chart-/blob/master/main.r
+https://github.com/JohnnyPeng123/hierarchical_bar_chart-/blob/master/demo.r
 
 "hbar" function has 3 required arguments:
 
@@ -43,4 +43,4 @@ And 2 optional arguments with default value:
 
 3. hbar.r - R function named "hbar" that produce hbar chart in R environment leveraging "r2d3" package and the original D3.js by Mike Bostock
 
-4. main.r - a simple use case to demonstration how to use the hbar.r function to generate hbar chart.
+4. demo.r - a simple use case to demonstration how to use the hbar.r function to generate hbar chart.
