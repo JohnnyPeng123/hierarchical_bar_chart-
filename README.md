@@ -26,11 +26,17 @@ https://github.com/JohnnyPeng123/hierarchical_bar_chart-/blob/master/demo.r
 
 3. method - method will be used to perform aggregation, you can either use "count" or "sum", "mean" is also available, but the output will not make sense at this stage, planning to show the average/median value as a dot/line on top of the bars in the future.
 
-And 2 optional arguments with default value:
+And 3 optional arguments with default value:
 
-1. num_variable (default = NULL) - if method does not equal to "count", you can use this to specify a numeric variable that should be used for aggregation.
+1. left_margin (default = 200) - the amount of white space on the left reservered for displaying the texts
 
-2. na.rm (default = T) - whether or not to remove observations with missing values during aggregation.
+2. font_size (default = 15) - size of the fonts for all the texts displayed in the graph
+
+3. ticks_width (default = 100) - width between the ticks on the x-axis
+
+4. num_variable (default = NULL) - if method does not equal to "count", you can use this to specify a numeric variable that should be used for aggregation.
+
+5. na.rm (default = T) - whether or not to remove observations with missing values during aggregation.
 
 # Files in this Repo
 
